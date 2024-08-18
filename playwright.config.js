@@ -13,14 +13,14 @@ const { defineConfig, devices } = require('@playwright/test')
 module.exports = defineConfig({
   webServer: {
     command: 'npm run start',
-    url: 'http://127.0.0.1:8080',
+    url: 'http://127.0.0.1:8081',
     timeout: 120 * 1000,
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: 'http://localhost:8080/',
+    baseURL: 'http://localhost:8081/',
   },
-  testDir: './tests',
+  testDir: './e2e-tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
