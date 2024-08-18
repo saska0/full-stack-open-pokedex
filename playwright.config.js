@@ -20,7 +20,7 @@ module.exports = defineConfig({
   use: {
     baseURL: 'http://localhost:8081/',
   },
-  testDir: './tests',
+  testDir: './e2e-tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
